@@ -1,35 +1,51 @@
-# SHA256 string format Schema
+# Strict username format Schema
 
 ```txt
-undefined#/properties/password_hash
+http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/user
 ```
 
-A SHA256 string is 64 hexadecimal numbers long
+See <https://www.unix.com/man-page/linux/8/useradd/>
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [validate-input.json*](validate-input.json "open original schema") |
 
-## password_hash Type
+## user Type
 
-`string` ([SHA256 string format](sha256-string.md))
+`string` ([Strict username format](cluster-defs-definitions-strict-username-format.md))
 
-## password_hash Constraints
+## user Constraints
 
-**maximum length**: the maximum number of characters for this string is: `64`
+**maximum length**: the maximum number of characters for this string is: `32`
 
-**minimum length**: the minimum number of characters for this string is: `64`
+**minimum length**: the minimum number of characters for this string is: `1`
 
 **pattern**: the string must match the following regular expression: 
 
 ```regexp
-^[a-f0-9]{64}$
+^[a-z_][a-z0-9_-]*[$]?$
 ```
 
-[try pattern](https://regexr.com/?expression=%5E%5Ba-f0-9%5D%7B64%7D%24 "try regular expression with regexr.com")
+[try pattern](https://regexr.com/?expression=%5E%5Ba-z\_%5D%5Ba-z0-9\_-%5D\*%5B%24%5D%3F%24 "try regular expression with regexr.com")
 
-## password_hash Examples
+## user Examples
 
 ```json
-"73cb3858a687a8494ca3323053016282f3dad39d42cf62ca4e79dda2aac7d9ac"
+"admin"
+```
+
+```json
+"u0000"
+```
+
+```json
+"worker$"
+```
+
+```json
+"test-user"
+```
+
+```json
+"test_user"
 ```

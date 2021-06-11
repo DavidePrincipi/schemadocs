@@ -1,7 +1,7 @@
-# add-user output Schema
+# Add-user (output) Schema
 
 ```txt
-undefined
+http://nethserver.org/json-schema/task/output/cluster/add-user
 ```
 
 Output schema of the add-user action
@@ -10,11 +10,11 @@ Output schema of the add-user action
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [validate-output.json](validate-output.json "open original schema") |
 
-## add-user output Type
+## Add-user (output) Type
 
-`object` ([add-user output](validate-output.md))
+`object` ([Add-user (output)](validate-output.md))
 
-## add-user output Examples
+## Add-user (output) Examples
 
 ```json
 {}

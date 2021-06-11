@@ -1,1 +1,0 @@
-{"$schema":"http://json-schema.org/draft-07/schema#","title":"Grant object structure","description":"A grant object establishes a relation between a role and the cluster objects matching the \"on\" clause","examples":[{"role":"owner","on":"*"}],"type":"object","properties":{"role":{"type":"string","minLength":1},"on":{"type":"string","minLength":1}}}

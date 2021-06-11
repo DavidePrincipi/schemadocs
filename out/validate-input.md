@@ -1,7 +1,7 @@
-# add-user input Schema
+# Add-user (input) Schema
 
 ```txt
-undefined
+http://nethserver.org/json-schema/task/input/cluster/add-user
 ```
 
 Create a user account for the cluster administration web interface
@@ -10,11 +10,11 @@ Create a user account for the cluster administration web interface
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [validate-input.json](validate-input.json "open original schema") |
 
-## add-user input Type
+## Add-user (input) Type
 
-`object` ([add-user input](validate-input.md))
+`object` ([Add-user (input)](validate-input.md))
 
-## add-user input Examples
+## Add-user (input) Examples
 
 ```json
 {
@@ -32,14 +32,9 @@ Create a user account for the cluster administration web interface
 }
 ```
 
-# add-user input Properties
+# Add-user (input) Properties
 
-| Property                        | Type     | Required | Nullable       | Defined by                                                                         |
-| :------------------------------ | :------- | :------- | :------------- | :--------------------------------------------------------------------------------- |
-| [user](#user)                   | `string` | Required | cannot be null | [add-user input](username-strict.md "undefined#/properties/user")                  |
-| [password_hash](#password_hash) | `string` | Required | cannot be null | [add-user input](sha256-string.md "undefined#/properties/password_hash")           |
-| [set](#set)                     | `object` | Required | cannot be null | [add-user input](user-attributes.md "undefined#/properties/set")                   |
-| [grant](#grant)                 | `array`  | Required | cannot be null | [add-user input](validate-input-properties-grant.md "undefined#/properties/grant") |
+
 
 ## user
 
@@ -49,15 +44,13 @@ See <https://www.unix.com/man-page/linux/8/useradd/>
 
 *   is required
 
-*   Type: `string` ([Strict username validation schema](username-strict.md))
-
 *   cannot be null
 
-*   defined in: [add-user input](username-strict.md "undefined#/properties/user")
+*   defined in: [Add-user (input)](cluster-defs-definitions-strict-username-format.md "http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/user")
 
 ### user Type
 
-`string` ([Strict username validation schema](username-strict.md))
+`string` ([Strict username format](cluster-defs-definitions-strict-username-format.md))
 
 ### user Constraints
 
@@ -97,21 +90,19 @@ See <https://www.unix.com/man-page/linux/8/useradd/>
 
 ## password_hash
 
-A SHA256 string is 64 hexadecimal numbers long
+A SHA256 string is 64 hexadecimal digits long
 
 `password_hash`
 
 *   is required
 
-*   Type: `string` ([SHA256 string format](sha256-string.md))
-
 *   cannot be null
 
-*   defined in: [add-user input](sha256-string.md "undefined#/properties/password_hash")
+*   defined in: [Add-user (input)](cluster-defs-definitions-sha256-string-format.md "http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/password_hash")
 
 ### password_hash Type
 
-`string` ([SHA256 string format](sha256-string.md))
+`string` ([SHA256 string format](cluster-defs-definitions-sha256-string-format.md))
 
 ### password_hash Constraints
 
@@ -135,21 +126,19 @@ A SHA256 string is 64 hexadecimal numbers long
 
 ## set
 
-Display name and similar...
+Attributes of a User
 
 `set`
 
 *   is required
 
-*   Type: `object` ([User attributes](user-attributes.md))
-
 *   cannot be null
 
-*   defined in: [add-user input](user-attributes.md "undefined#/properties/set")
+*   defined in: [Add-user (input)](cluster-defs-definitions-user-attributes.md "http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/set")
 
 ### set Type
 
-`object` ([User attributes](user-attributes.md))
+`object` ([User attributes](cluster-defs-definitions-user-attributes.md))
 
 ### set Examples
 
@@ -167,15 +156,13 @@ A list of initial roles on the matching cluster objects
 
 *   is required
 
-*   Type: `object[]` ([Grant object structure](user-grants.md))
-
 *   cannot be null
 
-*   defined in: [add-user input](validate-input-properties-grant.md "undefined#/properties/grant")
+*   defined in: [Add-user (input)](validate-input-properties-grant-assertions-list.md "http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/grant")
 
 ### grant Type
 
-`object[]` ([Grant object structure](user-grants.md))
+`object[]` ([Grant object](cluster-defs-definitions-grant-object.md))
 
 ### grant Constraints
 

@@ -1,10 +1,10 @@
 # User attributes Schema
 
 ```txt
-undefined#/properties/set
+http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/set
 ```
 
-Display name and similar...
+Attributes of a User
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------- |
@@ -12,7 +12,7 @@ Display name and similar...
 
 ## set Type
 
-`object` ([User attributes](user-attributes.md))
+`object` ([User attributes](cluster-defs-definitions-user-attributes.md))
 
 ## set Examples
 
@@ -24,9 +24,7 @@ Display name and similar...
 
 # set Properties
 
-| Property                      | Type     | Required | Nullable       | Defined by                                                                                         |
-| :---------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------- |
-| [display_name](#display_name) | `string` | Optional | cannot be null | [User attributes](user-attributes-properties-display_name.md "undefined#/properties/display_name") |
+
 
 ## display_name
 
@@ -36,11 +34,9 @@ Display name and similar...
 
 *   is optional
 
-*   Type: `string`
-
 *   cannot be null
 
-*   defined in: [User attributes](user-attributes-properties-display_name.md "undefined#/properties/display_name")
+*   defined in: [Cluster library](cluster-defs-definitions-user-attributes-properties-display_name.md "http://nethserver.org/json-schema/task/library/cluster#/definitions/user-attributes/properties/display_name")
 
 ### display_name Type
 

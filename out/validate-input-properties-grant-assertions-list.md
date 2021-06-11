@@ -1,7 +1,7 @@
-# Untitled array in add-user input Schema
+# Grant assertions list Schema
 
 ```txt
-undefined#/properties/grant
+http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/grant
 ```
 
 A list of initial roles on the matching cluster objects
@@ -12,7 +12,7 @@ A list of initial roles on the matching cluster objects
 
 ## grant Type
 
-`object[]` ([Grant object structure](user-grants.md))
+`object[]` ([Grant object](cluster-defs-definitions-grant-object.md))
 
 ## grant Constraints
 

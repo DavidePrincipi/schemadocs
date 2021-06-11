@@ -1,1 +1,0 @@
-{"$schema":"http://json-schema.org/draft-07/schema#","title":"Strict username validation schema","description":"See https://www.unix.com/man-page/linux/8/useradd/","examples":["admin","u0000","worker$","test-user","test_user"],"type":"string","minLength":1,"maxLength":32,"pattern":"^[a-z_][a-z0-9_-]*[$]?$"}

@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "add-user output",
+    "title": "Add-user (output)",
+    "$id": "http://nethserver.org/json-schema/task/output/cluster/add-user",
     "description": "Output schema of the add-user action",
     "examples": [
         {}

@@ -1,51 +1,35 @@
-# Strict username validation schema Schema
+# SHA256 string format Schema
 
 ```txt
-undefined#/properties/user
+http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/password_hash
 ```
 
-See <https://www.unix.com/man-page/linux/8/useradd/>
+A SHA256 string is 64 hexadecimal digits long
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                         |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [validate-input.json*](validate-input.json "open original schema") |
 
-## user Type
+## password_hash Type
 
-`string` ([Strict username validation schema](username-strict.md))
+`string` ([SHA256 string format](cluster-defs-definitions-sha256-string-format.md))
 
-## user Constraints
+## password_hash Constraints
 
-**maximum length**: the maximum number of characters for this string is: `32`
+**maximum length**: the maximum number of characters for this string is: `64`
 
-**minimum length**: the minimum number of characters for this string is: `1`
+**minimum length**: the minimum number of characters for this string is: `64`
 
 **pattern**: the string must match the following regular expression: 
 
 ```regexp
-^[a-z_][a-z0-9_-]*[$]?$
+^[a-f0-9]{64}$
 ```
 
-[try pattern](https://regexr.com/?expression=%5E%5Ba-z\_%5D%5Ba-z0-9\_-%5D\*%5B%24%5D%3F%24 "try regular expression with regexr.com")
+[try pattern](https://regexr.com/?expression=%5E%5Ba-f0-9%5D%7B64%7D%24 "try regular expression with regexr.com")
 
-## user Examples
-
-```json
-"admin"
-```
+## password_hash Examples
 
 ```json
-"u0000"
-```
-
-```json
-"worker$"
-```
-
-```json
-"test-user"
-```
-
-```json
-"test_user"
+"73cb3858a687a8494ca3323053016282f3dad39d42cf62ca4e79dda2aac7d9ac"
 ```
