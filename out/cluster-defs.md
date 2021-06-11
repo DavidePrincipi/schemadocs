@@ -24,7 +24,8 @@ Reference this group by using
 {"$ref":"http://nethserver.org/json-schema/task/library/cluster#/definitions/sha256-string"}
 ```
 
-
+| Property | Type | Required | Nullable | Defined by |
+| :------- | :--- | :------- | :------- | :--------- |
 
 ## Definitions group user-attributes
 
@@ -34,7 +35,9 @@ Reference this group by using
 {"$ref":"http://nethserver.org/json-schema/task/library/cluster#/definitions/user-attributes"}
 ```
 
-
+| Property                      | Type     | Required | Nullable       | Defined by                                                                                                                                                                                           |
+| :---------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [display_name](#display_name) | `string` | Optional | cannot be null | [Cluster library](cluster-defs-definitions-user-attributes-properties-display_name.md "http://nethserver.org/json-schema/task/library/cluster#/definitions/user-attributes/properties/display_name") |
 
 ### display_name
 
@@ -66,7 +69,10 @@ Reference this group by using
 {"$ref":"http://nethserver.org/json-schema/task/library/cluster#/definitions/grant-object"}
 ```
 
-
+| Property      | Type     | Required | Nullable       | Defined by                                                                                                                                                                     |
+| :------------ | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [role](#role) | `string` | Optional | cannot be null | [Cluster library](cluster-defs-definitions-grant-object-properties-role.md "http://nethserver.org/json-schema/task/library/cluster#/definitions/grant-object/properties/role") |
+| [on](#on)     | `string` | Optional | cannot be null | [Cluster library](cluster-defs-definitions-grant-object-properties-on.md "http://nethserver.org/json-schema/task/library/cluster#/definitions/grant-object/properties/on")     |
 
 ### role
 
@@ -120,3 +126,5 @@ Reference this group by using
 {"$ref":"http://nethserver.org/json-schema/task/library/cluster#/definitions/strict-username-string"}
 ```
 
+| Property | Type | Required | Nullable | Defined by |
+| :------- | :--- | :------- | :------- | :--------- |

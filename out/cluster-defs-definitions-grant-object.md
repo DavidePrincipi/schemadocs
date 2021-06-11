@@ -25,7 +25,10 @@ A grant object establishes a relation between a role and the cluster objects mat
 
 # items Properties
 
-
+| Property      | Type     | Required | Nullable       | Defined by                                                                                                                                                                     |
+| :------------ | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [role](#role) | `string` | Optional | cannot be null | [Cluster library](cluster-defs-definitions-grant-object-properties-role.md "http://nethserver.org/json-schema/task/library/cluster#/definitions/grant-object/properties/role") |
+| [on](#on)     | `string` | Optional | cannot be null | [Cluster library](cluster-defs-definitions-grant-object-properties-on.md "http://nethserver.org/json-schema/task/library/cluster#/definitions/grant-object/properties/on")     |
 
 ## role
 

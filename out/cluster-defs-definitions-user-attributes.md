@@ -24,7 +24,9 @@ Attributes of a User
 
 # set Properties
 
-
+| Property                      | Type     | Required | Nullable       | Defined by                                                                                                                                                                                           |
+| :---------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [display_name](#display_name) | `string` | Optional | cannot be null | [Cluster library](cluster-defs-definitions-user-attributes-properties-display_name.md "http://nethserver.org/json-schema/task/library/cluster#/definitions/user-attributes/properties/display_name") |
 
 ## display_name
 

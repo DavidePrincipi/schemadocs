@@ -34,7 +34,12 @@ Create a user account for the cluster administration web interface
 
 # Add-user (input) Properties
 
-
+| Property                        | Type     | Required | Nullable       | Defined by                                                                                                                                                     |
+| :------------------------------ | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [user](#user)                   | `string` | Required | cannot be null | [Add-user (input)](cluster-defs-definitions-strict-username-format.md "http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/user")        |
+| [password_hash](#password_hash) | `string` | Required | cannot be null | [Add-user (input)](cluster-defs-definitions-sha256-string-format.md "http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/password_hash") |
+| [set](#set)                     | `object` | Required | cannot be null | [Add-user (input)](cluster-defs-definitions-user-attributes.md "http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/set")                |
+| [grant](#grant)                 | `array`  | Required | cannot be null | [Add-user (input)](validate-input-properties-grant-assertions-list.md "http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/grant")       |
 
 ## user
 
