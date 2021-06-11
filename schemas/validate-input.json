@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "add-user input",
+    "description": "Create a user account for the cluster administration web interface",
+    "examples": [
+        {
+            "user": "admin",
+            "password_hash": "73cb3858a687a8494ca3323053016282f3dad39d42cf62ca4e79dda2aac7d9ac",
+            "set": {
+                "display_name": "The Administrator"
+            },
+            "grant": [{"role":"owner", "on":"*"}]
+        }
+    ],
+    "type": "object",
+    "properties": {
+        "user": {
+            "description": "The new user name",
+            "$ref": "username-strict.json"
+        },
+        "password_hash": {
+            "description": "SHA256 hash of the new user password",
+            "$ref": "sha256-string.json"
+        },
+        "set": {
+            "description": "Assign values to user's attributes",
+            "$ref": "user-attributes.json"
+        },
+        "grant": {
+            "description": "A list of initial roles on the matching cluster objects",
+            "type": "array",
+            "items": {
+                "$ref": "user-grants.json"
+            },
+            "uniqueItems": true
+        }
+    },
+    "required": ["user", "password_hash", "set", "grant"]
+}
