@@ -44,6 +44,8 @@ Reference this group by using
 
 *   is optional
 
+*   Type: `string`
+
 *   cannot be null
 
 *   defined in: [Cluster library](cluster-defs-definitions-user-attributes-properties-display_name.md "http://nethserver.org/json-schema/task/library/cluster#/definitions/user-attributes/properties/display_name")
@@ -74,6 +76,8 @@ Reference this group by using
 
 *   is optional
 
+*   Type: `string`
+
 *   cannot be null
 
 *   defined in: [Cluster library](cluster-defs-definitions-grant-object-properties-role.md "http://nethserver.org/json-schema/task/library/cluster#/definitions/grant-object/properties/role")
@@ -93,6 +97,8 @@ Reference this group by using
 `on`
 
 *   is optional
+
+*   Type: `string`
 
 *   cannot be null
 

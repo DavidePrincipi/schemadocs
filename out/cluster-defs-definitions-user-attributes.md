@@ -34,6 +34,8 @@ Attributes of a User
 
 *   is optional
 
+*   Type: `string`
+
 *   cannot be null
 
 *   defined in: [Cluster library](cluster-defs-definitions-user-attributes-properties-display_name.md "http://nethserver.org/json-schema/task/library/cluster#/definitions/user-attributes/properties/display_name")

@@ -44,6 +44,8 @@ See <https://www.unix.com/man-page/linux/8/useradd/>
 
 *   is required
 
+*   Type: `string` ([Strict username format](cluster-defs-definitions-strict-username-format.md))
+
 *   cannot be null
 
 *   defined in: [Add-user (input)](cluster-defs-definitions-strict-username-format.md "http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/user")
@@ -96,6 +98,8 @@ A SHA256 string is 64 hexadecimal digits long
 
 *   is required
 
+*   Type: `string` ([SHA256 string format](cluster-defs-definitions-sha256-string-format.md))
+
 *   cannot be null
 
 *   defined in: [Add-user (input)](cluster-defs-definitions-sha256-string-format.md "http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/password_hash")
@@ -132,6 +136,8 @@ Attributes of a User
 
 *   is required
 
+*   Type: `object` ([User attributes](cluster-defs-definitions-user-attributes.md))
+
 *   cannot be null
 
 *   defined in: [Add-user (input)](cluster-defs-definitions-user-attributes.md "http://nethserver.org/json-schema/task/input/cluster/add-user#/properties/set")
@@ -155,6 +161,8 @@ A list of initial roles on the matching cluster objects
 `grant`
 
 *   is required
+
+*   Type: `object[]` ([Grant object](cluster-defs-definitions-grant-object.md))
 
 *   cannot be null
 
